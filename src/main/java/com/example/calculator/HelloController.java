@@ -32,7 +32,7 @@ public class HelloController {
     private boolean checkInputs(){
         
         if(numF.getText().isEmpty() || numS.getText().isEmpty()){
-            output.setText("Please enter a number!");
+            output.setText("Kérlek add meg az összes számot!");
             return false;
         }
 
@@ -40,7 +40,7 @@ public class HelloController {
             Double.parseDouble(numF.getText());
             Double.parseDouble(numS.getText());
         }catch (NumberFormatException e){
-            output.setText("Please enter only numbers!");
+            output.setText("Kérlek csak számot addj meg!");
             return false;
         }
 
